@@ -28,15 +28,6 @@ Users who visits Goldies Gym Web application, should be able to register themsel
 
 The Marketing team should be able to see the list of users who have shared their interest for the fitness programs, call them back and close the ticket with their remarks.
 
-All layers of the application should be tested by writing automated test cases.
-
-To reduce redundant calls to the database, the Development Team should implement caching at the service layer for reducing the load as well as improving the response time of queries.
-
-To make the API robust, the Development Team should handle the exceptions and errors that can occur in the application.
-
-Logs are essential data that an application generates during its lifetime. Logs provide invaluable insights on how the application is working. Hence, logging will have to be implemented and aggregated.
-
-Considering that the API will be integrating with multiple Third Party fitness apps, it is important to ensure compatibility and hence, at least two versions of the API needs to be created(for listing and checking details only), one with minimal information and fields(ideal for mobile apps) and the other with more detailed information.
 
 ### There would be three roles in this application. They would be allowed to perform activities based on their role: 
   - **Customer**: View details of the fitness programs and show interest by providing contact details
@@ -59,12 +50,9 @@ Considering that the API will be integrating with multiple Third Party fitness a
 
 - Building the UserService
   1. Building a service to facilitate user registration and authentication using JWT token. This service uses PostGreSql as the persistent storage.
-  2. Unit and Integration Testing
 
 - Building the GymService
   1. Refactoring an existing express monolith to additionally support REST 2.0 API to manage fitness programs stored in PostGreSql database
-  2.  Unit and Integration Testing
 
 - Building the EnquiryService
   1. Building a server in expressjs to facilitate CRUD operation over customer details of customers who has shown interest, stored in PostGreSql database
-  2. Unit and Integration Testing
