@@ -1,0 +1,38 @@
+<!-- header -->
+<app-header></app-header>
+
+
+<!-- main -->
+<div class="wrapper fadeInDown" style="height: 92vh; background-color: rgb(38, 110, 128);">
+  <div id="formContent" style="background-color: rgb(243, 245, 247);">
+
+    <!-- Login Form -->
+    <input type="text" id="login" [(ngModel)]="uname" class="fadeIn second mt-5" name="login" placeholder="username">
+    <input type="text" id="password" [(ngModel)]="password" class="fadeIn third mt-2" name="login" placeholder="password">
+    <!-- Radio button -->
+    
+    <div class="form-check">
+      <input class="form-check-input" [(ngModel)]="radio" type="radio" value="2" name="flexRadioDefault" id="flexRadioDefault2" >
+      <label class="form-check-label" for="flexRadioDefault2">
+        Admin
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" [(ngModel)]="radio" type="radio" value="1" name="flexRadioDefault" id="flexRadioDefault1" checked>
+      <label class="form-check-label" for="flexRadioDefault1">
+        Customer
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" [(ngModel)]="radio" type="radio" value="3" name="flexRadioDefault" id="flexRadioDefault3">
+      <label class="form-check-label" for="flexRadioDefault3">
+        Marketing Team
+      </label>
+    </div>
+    <button  class="btn btn-success mt-3 mb-2" value="Log In" (click)="submit()">Submit </button>
+    <br>
+    <!-- error display -->
+    <div class="mb-2" style="color:red">{{errorMessage}}</div>
+
+  </div>
+</div>

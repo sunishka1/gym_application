@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+    <div class="card-body">
+        <!-- <h2 class="card-title">{{card.title}}</h2>
+        <p class="card-text"><b>Details: </b>{{card.desc}}</p> -->
+        <p class="card-text"><b>Fee: </b>{{card.price}}</p>
+        <p class="card-text"><b>Duration: </b>{{card.duration}}</p>
+        <input type="text" placeholder="submit query if any" [(ngModel)]="query" >
+        <button class="btn btn-primary mt-1" (click)="submitQuery()">
+            Submit
+        </button><br>
+        <button class="btn btn-info mt-2" id="btn-1{{card.id}}" (click)="enroll()">Enroll</button>
+        <button class="btn btn-info mt-2" id="btn-2{{card.id}}" (click)="disenroll()">Disenroll</button>
+    </div>
+</div>

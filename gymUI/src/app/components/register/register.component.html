@@ -1,0 +1,25 @@
+<!-- header -->
+<app-header></app-header>
+
+
+<!-- main -->
+<div class="wrapper fadeInDown" style="height: 92vh; background-color: rgb(35, 95, 134);">
+    <div id="formContent" style="background-color: rgb(235, 241, 245);">
+  
+      <!-- Login Form -->
+      <form>
+        <input type="text" id="login" [(ngModel)]="name" class="fadeIn second mt-5" name="login" placeholder="enter username">
+        <input type="text" id="password" [(ngModel)]="password" class="fadeIn third mt-2" name="login" placeholder="password">
+        <button class="btn btn-primary mt-4 mb-3" (click)="submit()">Register</button>
+        <br>
+        <div style="color: red;">
+          {{errorMessage}}
+        </div>
+        <div style="color: green;">
+          {{createdMessage}}
+        </div>
+        <br>
+      </form>
+
+    </div>
+  </div>

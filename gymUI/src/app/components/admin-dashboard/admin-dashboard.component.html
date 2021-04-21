@@ -1,0 +1,22 @@
+<!-- Displaying the error message-->
+<label class="error-message">{{ errMessage }}</label>
+
+<!-- Adding a new package-->
+<div class="keep-c-expansion-panel-wrapper">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Add a package</mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="keep-c-note-taker-wrapper">
+      <mat-form-field>
+        <input [(ngModel)]="pck.price" name="price" matInput placeholder="Price" type="number">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea [(ngModel)]="pck.duration" name="duration" matInput placeholder="Duration"></textarea>
+      </mat-form-field>
+      <div class="keep-c-done-wrapper">
+        <button mat-flat-button (click)="addPackages()">Done</button>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</div>
